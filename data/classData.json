@@ -1,0 +1,12 @@
+{ "classData" :
+    [
+        {
+            "class" : "intro to intros",
+            "Professor" : "Dr. Doctor"
+        },
+        {
+            "class" : "intro to basics",
+            "professor" : "Dr. Basic"
+        }
+    ]
+}

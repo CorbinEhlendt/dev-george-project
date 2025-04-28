@@ -26,8 +26,8 @@ a {
 
 img { 
   border-radius: 10px;
-  padding: 5px;
-  width: 100px;
+  padding: px;
+  width: 75px;
 }
 
 ul {
@@ -35,14 +35,7 @@ ul {
   font-size: 1.5 ;
 }
 
-/* New code */
-a:hover {
-  color: #FFCC00;
-}
 
-#wireframe {
-  width: 500px;
-}
 
 
 
