@@ -8,8 +8,8 @@ fetch('https://CorbinEhlendt.github.io/dev-george-project/data/classData.json')
   })
   
   .then(data => { 
-    // displayClassData(data.classData);
-      console.log(data.classData);
+     displayClassData(data.classData);
+    //  console.log(data.classData);
   })
 
   .catch(error => {
