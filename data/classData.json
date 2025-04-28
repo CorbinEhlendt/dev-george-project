@@ -1,12 +1,16 @@
 { "classData" :
     [
         {
-            "class" : "intro to intros",
-            "Professor" : "Dr. Doctor"
+            "class" : "Intro to Intros",
+            "professor" : "Dr. Doctor"
         },
         {
-            "class" : "intro to basics",
+            "class" : "Intro to Basics",
             "professor" : "Dr. Basic"
+        },
+        {
+            "class" : "Intro to Beginner",
+            "professor" : "Dr. Beginner"
         }
     ]
 }

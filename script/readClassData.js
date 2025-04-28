@@ -1,13 +1,17 @@
-fetch('https://corbinehlendt.github.io/dev-george-project/data/classData.json')
-  .then(response => {
+fetch('https://CorbinEhlendt.github.io/dev-george-project/data/classData.json')
+  
+.then(response => {
       if (!response.ok) {
           throw new Error('Network response was not ok');
       }
       return response.json(); 
   })
-  .then(data => {
-      console.log(data);
+  
+  .then(data => { 
+    // displayClassData(data.classData);
+      console.log(data.classData);
   })
+
   .catch(error => {
       // Handle errors
       console.error('Fetch Error :-S', error);
@@ -20,6 +24,6 @@ fetch('https://corbinehlendt.github.io/dev-george-project/data/classData.json')
         console.log(`professor: ${log.professor}`);
         
 
-        document.getElementById('dataSpot').innerHTML += `<li class="list-group-item"><strong>${log.class}: ${log.professor}</li>`; 
+        document.getElementById('dataSpot').innerHTML += `<li class="list-group-item"><strong>${log.class}:</strong> ${log.professor}</li>`; 
     }
 }
