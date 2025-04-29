@@ -21,38 +21,39 @@ date: 1/23/2025
 <body class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="https://gist.github.com/user-attachments/assets/c1e8e19a-3130-4c16-8e25-85ff980379dc" alt="UNA logo"> Dev George </a>
+            <a class="navbar-brand" href="#"><img
+                    src="https://gist.github.com/user-attachments/assets/c1e8e19a-3130-4c16-8e25-85ff980379dc"
+                    alt="UNA logo"> Dev George </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="d-flex">
-                <span id="user-name" class="navbar-text me-3"></span>
-                <button id="login-btn" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#loginModal">Login</button>
-            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="https://github.com/CorbinEhlendt">My
+                        <a class="nav-link active" aria-current="page" href="https://github.com/CorbinEhlendt" target="_blank">My
                             Github</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/CorbinEhlendt/dev-george-project">Source Code</a>
+                        <a class="nav-link" href="https://github.com/CorbinEhlendt/dev-george-project" target="_blank">Source Code</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"
-                            href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcorbinehlendt.github.io%2Fdev-george-project%2F">NU</a>
+                            href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcorbinehlendt.github.io%2Fdev-george-project%2F" target="_blank">NU</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"
-                            href="https://wave.webaim.org/report#/https://corbinehlendt.github.io/dev-george-project/">Wave</a>
+                            href="https://wave.webaim.org/report#/https://corbinehlendt.github.io/dev-george-project/" target="_blank">Wave</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"
-                            href="https://raw.githubusercontent.com/CorbinEhlendt/dev-george-project/refs/heads/main/images/able_wireframe.jpg">WireFrame</a>
+                            href="https://raw.githubusercontent.com/CorbinEhlendt/dev-george-project/refs/heads/main/images/able_wireframe.jpg" target="_blank">WireFrame</a>
                     </li>
                 </ul>
+            </div>
+            <div class="d-flex ms-auto align-items-center">
+                <span id="user-name" class="navbar-text me-3"></span>
+                <button id="login-btn" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
             </div>
         </div>
     </nav>
@@ -82,14 +83,27 @@ date: 1/23/2025
             </div>
         </div>
     </div>
-   
-   
+    <br>
+    <br>
+    <div id="add-class-form" class="mt-4">
+        <h3>Add a New Class</h3>
+        <form id="new-class-form">
+            <input type="text" id="new-class-name" placeholder="Class Name" required>
+            <input type="text" id="new-professor-name" placeholder="Professor Name" required>
+            <button type="submit" class="btn btn-warning btn-sm ">Add Class</button>
+        </form>
+    </div>
+    <br>
+    <br>
     <!-- Json data  -->
-    <ul id="dataSpot" class="list-group"></ul>
-    
+    <div id="classes">
+        <h3>List of Classes and Professors</h3>
+        <ul id="dataSpot" class="list-group"></ul>
+    </div>
+    <br>
+    <br>
+    <button id="export-data-btn" class="btn btn-info mt-3">Export Data</button>
 
-
-   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
