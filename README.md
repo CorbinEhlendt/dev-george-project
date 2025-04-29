@@ -56,4 +56,4 @@ deleting one of your classes.
 
 ---
 
-## Future app [ideas](url)
+## Future app [ideas](https://github.com/CorbinEhlendt/dev-george-project/issues/1)
