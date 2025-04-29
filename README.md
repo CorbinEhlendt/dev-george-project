@@ -21,33 +21,39 @@ The purpose of the app is to have a easy way to see the classes you have taken. 
 
 ---
 
-## 🖼️ Screenshots & Code Samples
+##  Screenshots & Code Samples
 
-### ✨ My App (Login Modal)
+###  Original app design
 
-![dev-able-screenshot]()
-
-### ✨ Real App Examples
-
-Examples that inspired me:
-- [Dribbble login page designs](https://dribbble.com/tags/login)
-- Twitter's clean simple login form.
-
-*(Insert screenshots of real apps you looked at for ideas.)*
+![dev-able-screenshot](https://github.com/CorbinEhlendt/dev-george-project/blob/main/images/ablePreview.png)
 
 ---
 
-## 🧩 Cool Code Snippet
+## Cool Code Snippet
 
-Here’s a snippet I’m proud of:
+Here’s a snippet of code:
 
 ```javascript
-loginBtn.addEventListener('click', function() {
-  if (loggedIn) {
-    loggedIn = false;
-    userNameSpan.textContent = '';
-    loginBtn.textContent = 'Login';
-    loginBtn.setAttribute('data-bs-toggle', 'modal');
-    loginBtn.setAttribute('data-bs-target', '#loginModal');
-  }
-});
+// Show Delete Confirmation
+function showDeleteConfirmation(log, listItem, index, classData) {
+    const confirmationBox = document.createElement('div');
+    confirmationBox.className = 'confirmation-box mt-2';
+    confirmationBox.innerHTML = `
+        <p>Delete "<strong>${log.class}</strong>"?</p>
+        <button class="btn btn-danger btn-sm confirm-delete-btn">Delete</button>
+        <button class="btn btn-secondary btn-sm cancel-delete-btn">Cancel</button>
+    `;
+
+    listItem.appendChild(confirmationBox);
+
+    confirmationBox.querySelector('.confirm-delete-btn').onclick = () => deleteRecord(index, classData, listItem);
+    confirmationBox.querySelector('.cancel-delete-btn').onclick = () => confirmationBox.remove();
+}
+```
+This code creates a confirmation prompt for the use to delete a class they have listed. 
+This is great because by adding the confirmation you get rid of the risk of accidentally 
+deleting one of your classes.
+
+---
+
+## Future app [ideas](url)
